@@ -9,12 +9,11 @@ Documentação estruturada dos passos executados para a construção da classe
 `EBookAdapter`, aplicando o **padrão de projeto estrutural Adapter (GoF)**
 sobre o projeto base [DesignPatternsPHP](https://github.com/DesignPatternsPHP/DesignPatternsPHP).
 
-## 👥 Integrantes
- 
-| Nome |
+| Dupla |
 |---|
 | Miguel Gustavo de Sousa Campos |
 | Henrique de Moraes Rodrigues |
+
 ---
 
 ## 📑 Sumário
@@ -88,13 +87,50 @@ composer install
 | Avançar página | `turnPage(): void` | `pressNext(): void` |
 | Página atual | `getPage(): int` | `getPage(): int[]` → `[páginaAtual, totalPáginas]` |
 
+## 🗺 Diagrama de classes
 
-## 📐 Diagrama UML (fornecido pelo projeto base)
- 
-![UML do padrão Adapter](DesignPatternsPHP/Structural/Adapter/uml/uml.png)
- 
----
+```mermaid
+classDiagram
+    class Book {
+        <<interface>>
+        +open()
+        +turnPage()
+        +getPage() int
+    }
+    class EBook {
+        <<interface>>
+        +unlock()
+        +pressNext()
+        +getPage() int[]
+    }
+    class PaperBook {
+        -page int
+        +open()
+        +turnPage()
+        +getPage() int
+    }
+    class Kindle {
+        -page int
+        -totalPages int
+        +unlock()
+        +pressNext()
+        +getPage() int[]
+    }
+    class EBookAdapter {
+        -eBook EBook
+        +__construct(EBook)
+        +open()
+        +turnPage()
+        +getPage() int
+    }
 
+    Book <|.. PaperBook
+    Book <|.. EBookAdapter
+    EBook <|.. Kindle
+    EBookAdapter o-- EBook : composição
+```
+
+*(Também disponível como imagem estática em [`Structural/Adapter/uml/uml.png`](DesignPatternsPHP/Structural/Adapter/uml/uml.png), fornecida pelo projeto base.)*
 
 ## 4️⃣ Identificação do conflito
 
