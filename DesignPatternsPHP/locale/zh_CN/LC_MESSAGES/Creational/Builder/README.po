@@ -1,0 +1,70 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: DesignPatternsPHP 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-05-29 12:18+0200\n"
+"PO-Revision-Date: 2022-01-07 14:40+0800\n"
+"Last-Translator: Aspirant Zhang <admin@aspirantzhang.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+
+#: ../../Creational/Builder/README.rst:2
+msgid "`Builder`__"
+msgstr "生成器模式"
+
+#: ../../Creational/Builder/README.rst:5
+msgid "Purpose"
+msgstr "目的"
+
+#: ../../Creational/Builder/README.rst:7
+msgid "Builder is an interface that build parts of a complex object."
+msgstr "生成器模式（Builder，或称建造者模式）是一个接口，用于构建复杂对象的各个部分。"
+
+#: ../../Creational/Builder/README.rst:9
+msgid ""
+"Sometimes, if the builder has a better knowledge of what it builds, this "
+"interface could be an abstract class with default methods (aka adapter)."
+msgstr ""
+"在某些情况下，如果生成器对其构建的内容有很好的了解，那么这个接口可以是一个抽象类，并会有一个默认方法（也称适配器）。"
+
+#: ../../Creational/Builder/README.rst:12
+msgid ""
+"If you have a complex inheritance tree for objects, it is logical to have a "
+"complex inheritance tree for builders too."
+msgstr ""
+"如果对象具有复杂的继承结构，那么按照的正常逻辑，生成器也应该有一个复杂的继承结构。"
+
+#: ../../Creational/Builder/README.rst:15
+msgid ""
+"Note: Builders have often a fluent interface, see the mock builder of "
+"PHPUnit for example."
+msgstr ""
+"注意：生成器通常有都有一个完善的接口，例如 PHPUnit 的模拟生成器（Mock Builder）。"
+
+#: ../../Creational/Builder/README.rst:19
+msgid "Examples"
+msgstr "例子"
+
+#: ../../Creational/Builder/README.rst:21
+msgid "PHPUnit: Mock Builder"
+msgstr ""
+"PHPUnit: 模拟生成器（Mock Builder）"
+
+#: ../../Creational/Builder/README.rst:24
+msgid "UML Diagram"
+msgstr "UML 图"
+
+#: ../../Creational/Builder/README.rst:31
+msgid "Code"
+msgstr "代码"
+
+#: ../../Creational/Builder/README.rst:33
+msgid "You can also find this code on `GitHub`_"
+msgstr "你可以在 `GitHub`_ 上找到这些代码"
+
+#: ../../Creational/Builder/README.rst:96
+msgid "Test"
+msgstr "测试"
