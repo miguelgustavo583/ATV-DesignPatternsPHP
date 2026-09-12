@@ -3,6 +3,10 @@
 Documentação dos passos executados para a construção do método `EBookAdapter`, aplicando o
 padrão de projeto estrutural **Adapter** sobre o projeto base [DesignPatternsPHP](https://github.com/DesignPatternsPHP/DesignPatternsPHP).
 
+##  Integrantes:
+- Miguel Gustavo de Sousa Campos
+- Henrique de Moraes Rodrigues
+
 ## 1. Clonagem do repositório
 
 ```bash
